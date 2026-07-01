@@ -144,7 +144,7 @@ export function Hero() {
         </div>
 
         {/* Right: photo */}
-        <div className="flex justify-center md:justify-end items-center md:items-end h-full pt-10 order-first md:order-last">
+        <div className="flex justify-center md:justify-end items-center md:items-end h-full pt-10 order-last">
           {/* Offset white frame */}
           <div className="relative">
             <div className="absolute -top-3 -right-3 w-full h-full border border-white/30 pointer-events-none z-0" />
