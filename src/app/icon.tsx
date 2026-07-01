@@ -16,15 +16,26 @@ export default function Icon() {
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          background: '#1A1A1A',
-          color: '#fff',
-          fontSize: 18,
-          fontWeight: 700,
-          letterSpacing: '0.02em',
-          borderBottom: '3px solid #2563FF',
         }}
       >
-        EO
+        <div
+          style={{
+            width: '100%',
+            height: '100%',
+            borderRadius: '50%',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            background: '#1A1A1A',
+            color: '#fff',
+            fontSize: 16,
+            fontWeight: 700,
+            letterSpacing: '0.02em',
+            border: '2px solid #2563FF',
+          }}
+        >
+          EO
+        </div>
       </div>
     ),
     { ...size }
