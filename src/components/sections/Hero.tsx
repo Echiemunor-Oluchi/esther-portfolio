@@ -144,17 +144,17 @@ export function Hero() {
         </div>
 
         {/* Right: photo */}
-        <div className="hidden md:flex justify-end items-end h-full pt-10">
+        <div className="flex justify-center md:justify-end items-center md:items-end h-full pt-10 order-first md:order-last">
           {/* Offset white frame */}
           <div className="relative">
             <div className="absolute -top-3 -right-3 w-full h-full border border-white/30 pointer-events-none z-0" />
-            <div className="relative w-[420px] lg:w-[520px] aspect-[3/4] overflow-hidden z-10">
+            <div className="relative w-65 sm:w-80 md:w-105 lg:w-130 aspect-3/4 overflow-hidden z-10">
               <Image
                 src="/images/esther-home.jpg"
                 alt="Esther Ozurumba"
                 fill
                 className="object-cover object-top"
-                sizes="400px"
+                sizes="(max-width: 768px) 320px, 400px"
                 priority
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
