@@ -58,8 +58,8 @@ export const projects: Project[] = [
     growthMetrics: [
       { label: 'Videos Delivered', before: '0', after: '3', unit: '' },
       { label: 'Avg Views Per Video', before: 'N/A', after: '500+', unit: '' },
-      { label: 'Engagement', before: 'Low', after: 'High', unit: '' },
-      { label: 'Brand Feel', before: 'Generic', after: 'Cinematic', unit: '' },
+      { label: 'Engagement', before: 'NIL', after: 'Engagement was high', unit: '' },
+      { label: 'Brand Feel', before: 'Not existing', after: 'Soft girl aesthetic', unit: '' },
     ],
     strategyNarrative: 'The brief was to make the product feel aspirational and the texture feel tactile. Every edit was made to hold attention, every transition timed to the beat.',
   },
