@@ -26,12 +26,12 @@ export default function Icon() {
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
-            background: '#1A1A1A',
-            color: '#fff',
+            background: '#2B231C',
+            color: '#F6F1E9',
             fontSize: 16,
             fontWeight: 700,
             letterSpacing: '0.02em',
-            border: '2px solid #2563FF',
+            border: '2px solid #C1592E',
           }}
         >
           EO

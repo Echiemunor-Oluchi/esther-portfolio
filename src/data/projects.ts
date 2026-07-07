@@ -33,7 +33,7 @@ export const projects: Project[] = [
     client: "Maka's Strands",
     tagline: 'Cinematic hair content that stops the scroll.',
     description:
-      "Maka's Strands is a hair brand built for the discerning woman who wants her natural texture celebrated on screen. The brief was simple: make the product feel aspirational, the texture feel tactile, and the edit feel intentional. Every cut was made to hold attention, every transition was timed to the beat.",
+      "Maka's Strands is a hair ponytail brand for women who want the \"that girl\" look without the \"that girl\" price tag. The objective was twofold: make the styles aspirational enough that women could picture themselves wearing one, and accessible enough to turn that fantasy into a purchase. The campaign delivered on both fronts.",
     role: ['Video Editing'],
     platform: 'TikTok',
     profileUrl: 'https://www.tiktok.com/@makas.strands',
@@ -52,7 +52,7 @@ export const projects: Project[] = [
       },
     ],
     tags: ['Video Editing', 'Short Form', 'Brand Content'],
-    coverColor: '#ffb6c1',
+    coverColor: '#D8A79A',
     featured: true,
     hasGrowthSection: true,
     growthMetrics: [
@@ -68,7 +68,7 @@ export const projects: Project[] = [
     client: 'Abdella',
     tagline: 'App-first storytelling for a new-generation brand.',
     description:
-      'Abdella is a digital product brand that needed its TikTok presence to feel as sharp as the app itself. The editing approach here leaned into fast pacing, clean motion graphics style cuts, and a tone that speaks directly to the audience. No filler, all signal.',
+      "Abdella is a new AI-powered nursing support platform, built by nurses, for nurses. I've edited videos that launched the platform in the health tech space and I'm currently developing an AI-sponsored campaign spotlighting the real healthcare challenges nurses face both at the bedside and beyond it and why the platform should be subscribed to by every nurse. Full case study coming soon.",
     role: ['Video Editing'],
     platform: 'TikTok',
     profileUrl: 'https://www.tiktok.com/@abdella.app',
@@ -87,7 +87,7 @@ export const projects: Project[] = [
       },
     ],
     tags: ['Video Editing', 'App Content', 'Short Form'],
-    coverColor: '#6b21a8',
+    coverColor: '#6B5B4F',
     featured: true,
     hasGrowthSection: true,
     growthMetrics: [
@@ -103,7 +103,7 @@ export const projects: Project[] = [
     client: 'Her Flow Care',
     tagline: 'Health content made to feel personal and powerful.',
     description:
-      'Her Flow Care is a wellness brand focused on menstrual health. The edit had to strike a balance: warm and intimate enough to earn trust, but sharp and confident enough to hold a TikTok feed. The result is a video that feels like a conversation, not an ad.',
+      "Her Flow Care is a menstrual care brand based in Port Harcourt, Nigeria, dedicated to helping women embrace the softness of womanhood. I partnered with the brand on their launch campaign, where the brief was clear: create enough warmth for women to talk about periods without shame, and enough polish to stop the scroll, hold attention, and convert desire into purchase. The campaign delivered exactly that.",
     role: ['Video Editing'],
     platform: 'TikTok',
     profileUrl: 'https://www.tiktok.com/@_herflowcare',
@@ -114,7 +114,7 @@ export const projects: Project[] = [
       },
     ],
     tags: ['Video Editing', 'Wellness', 'Short Form'],
-    coverColor: '#9d174d',
+    coverColor: '#9D5C55',
     featured: false,
     hasGrowthSection: true,
     growthMetrics: [
@@ -130,8 +130,8 @@ export const projects: Project[] = [
     client: 'Youth Mama Mentors',
     tagline: 'From zero to a community. Built with strategy and story.',
     description:
-      'Youth Mama Mentors is a mentorship platform for young mothers navigating the intersection of ambition and motherhood. The role here went beyond editing. It was end-to-end social media strategy: deciding what to post, when to post it, how to frame each story, and editing every reel to land the message. The result was real account growth driven by intentional content.',
-    role: ['Video Editing', 'Social Media Strategy'],
+      "Youth Mama Mentors is a faith-based mentorship platform for engaged and married couples committed to building happy, lasting relationships. The goal here wasn't to sell — it was to earn attention: content designed to make couples pause mid-scroll, reflect honestly on their own relationship, and return because they'd found a trusted source of guidance for the long haul.",
+    role: ['Video Editing', 'Content Strategy'],
     platform: 'Instagram',
     profileUrl: 'https://www.instagram.com/youthmama_mentors',
     videos: [
@@ -148,8 +148,8 @@ export const projects: Project[] = [
         title: 'The Mission',
       },
     ],
-    tags: ['Video Editing', 'Social Media Strategy', 'Instagram Reels', 'Community Building'],
-    coverColor: '#ea580c',
+    tags: ['Video Editing', 'Content Strategy', 'Instagram Reels', 'Community Building'],
+    coverColor: '#C98A3E',
     featured: true,
     hasGrowthSection: true,
     growthMetrics: [

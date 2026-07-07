@@ -36,7 +36,7 @@ const process = [
 const skills = [
   'Video Editing',
   'Video Strategy',
-  'Social Media Strategy',
+  'Content Strategy',
   'Short Form Content',
   'Brand Storytelling',
   'TikTok',
@@ -124,7 +124,7 @@ export default function AboutPage() {
   }, [])
 
   return (
-    <div className="bg-black min-h-screen">
+    <div className="bg-cream min-h-screen">
       {/* Hero */}
       <section
         ref={heroRef}
@@ -132,7 +132,7 @@ export default function AboutPage() {
       >
         <SectionLabel>About</SectionLabel>
         <div className="mt-4 overflow-visible">
-          <h1 className="font-display text-[18vw] md:text-[12vw] leading-none text-white">
+          <h1 className="font-display text-[18vw] md:text-[12vw] leading-none text-espresso">
             {['ESTHER', 'OZURUMBA'].map((word, i) => (
               <div key={i} className="overflow-hidden block">
                 <span className="word inline-block">{word}</span>
@@ -147,7 +147,7 @@ export default function AboutPage() {
         <div className="grid md:grid-cols-2 gap-12 md:gap-20 items-start">
           {/* Photo */}
           <div className="relative">
-            <div className="relative aspect-[3/4] overflow-hidden bg-charcoal">
+            <div className="relative aspect-[3/4] overflow-hidden bg-white">
               <Image
                 src="/images/esther-headshot.jpg"
                 alt="Esther Ozurumba, Video Editor & Strategist"
@@ -156,10 +156,10 @@ export default function AboutPage() {
                 sizes="(max-width: 768px) 100vw, 50vw"
                 priority
               />
-              <div className="absolute inset-0 border border-accent/10" />
+              <div className="absolute inset-0 border border-terracotta/10" />
             </div>
-            <div className="absolute -bottom-4 -right-4 bg-accent px-4 py-3">
-              <div className="text-white text-[9px] tracking-[0.25em] uppercase font-semibold">
+            <div className="absolute -bottom-4 -right-4 bg-terracotta px-4 py-3">
+              <div className="text-cream text-[9px] tracking-[0.25em] uppercase font-semibold">
                 Port Harcourt, Nigeria
               </div>
             </div>
@@ -168,16 +168,16 @@ export default function AboutPage() {
           {/* Bio */}
           <div className="space-y-8">
             <div>
-              <h2 className="font-display text-5xl md:text-6xl text-white leading-tight">
+              <h2 className="font-display text-5xl md:text-6xl text-espresso leading-tight">
                 MY NAME IS<br />
-                <span className="text-accent">ESTHER</span><br />
+                <span className="text-terracotta">ESTHER</span><br />
                 OZURUMBA.
               </h2>
             </div>
 
-            <div className="space-y-4 text-white/60 text-sm leading-relaxed">
+            <div className="space-y-4 text-espresso/60 text-sm leading-relaxed">
               <p>
-                I am a video editor and strategist based in Port Harcourt, Nigeria. I work at the intersection of craft and strategy, specializing in cinematic short form content for brands and creators across TikTok and Instagram.
+                I am a video editor and content strategist based in Port Harcourt, Nigeria. I work at the intersection of craft and strategy, specializing in cinematic short form content for brands and creators across TikTok and Instagram.
               </p>
               <p>
                 My approach goes beyond the edit. I think through the story behind the content: what gets posted, why it gets posted, and how it connects with the people watching.
@@ -192,13 +192,13 @@ export default function AboutPage() {
                 href="https://wa.me/2348034699451"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-accent text-white font-bold text-xs tracking-[0.12em] uppercase px-6 py-3 hover:bg-accent-dim transition-colors duration-300"
+                className="inline-flex items-center gap-2 bg-terracotta text-cream font-bold text-xs tracking-[0.12em] uppercase px-6 py-3 hover:bg-terracotta-dim transition-colors duration-300"
               >
                 Work With Me
               </a>
               <Link
                 href="/work"
-                className="inline-flex items-center gap-2 border border-white/20 text-white/60 hover:border-white/50 hover:text-white font-semibold text-xs tracking-[0.12em] uppercase px-6 py-3 transition-all duration-300"
+                className="inline-flex items-center gap-2 border border-taupe/20 text-espresso/60 hover:border-taupe/50 hover:text-espresso font-semibold text-xs tracking-[0.12em] uppercase px-6 py-3 transition-all duration-300"
               >
                 See the Work
               </Link>
@@ -207,12 +207,12 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <MarqueeStrip items={skills} className="bg-off-black" />
+      <MarqueeStrip items={skills} className="bg-cream" />
 
       {/* Process */}
       <section className="px-6 md:px-10 max-w-[1400px] mx-auto py-20 md:py-32">
         <SectionLabel>My Process</SectionLabel>
-        <h2 className="font-display text-[10vw] md:text-[6vw] text-white mt-4 mb-16 leading-none">
+        <h2 className="font-display text-[10vw] md:text-[6vw] text-espresso mt-4 mb-16 leading-none">
           HOW I WORK
         </h2>
 
@@ -220,7 +220,7 @@ export default function AboutPage() {
           {/* Vertical line */}
           <div
             ref={lineRef}
-            className="absolute left-6 md:left-[11rem] top-0 bottom-0 w-px bg-accent/40 hidden md:block"
+            className="absolute left-6 md:left-[11rem] top-0 bottom-0 w-px bg-terracotta/40 hidden md:block"
             style={{ transformOrigin: 'top center' }}
           />
 
@@ -229,14 +229,14 @@ export default function AboutPage() {
               <div
                 key={step.num}
                 ref={(el) => { if (el) stepsRef.current[i] = el }}
-                className="flex gap-6 md:gap-16 items-start py-10 md:py-12 border-b border-white/5 last:border-0"
+                className="flex gap-6 md:gap-16 items-start py-10 md:py-12 border-b border-taupe/5 last:border-0"
               >
                 <div className="flex-shrink-0 w-12 md:w-40 flex md:justify-end md:pr-10">
-                  <span className="font-display text-5xl md:text-6xl text-white/10 leading-none">{step.num}</span>
+                  <span className="font-display text-5xl md:text-6xl text-espresso/10 leading-none">{step.num}</span>
                 </div>
                 <div className="flex-1 pt-1">
-                  <h3 className="font-display text-3xl md:text-4xl text-white mb-3">{step.title.toUpperCase()}</h3>
-                  <p className="text-white/50 text-sm leading-relaxed max-w-md">{step.desc}</p>
+                  <h3 className="font-display text-3xl md:text-4xl text-espresso mb-3">{step.title.toUpperCase()}</h3>
+                  <p className="text-espresso/50 text-sm leading-relaxed max-w-md">{step.desc}</p>
                 </div>
               </div>
             ))}
@@ -251,7 +251,7 @@ export default function AboutPage() {
           {skills.map((skill) => (
             <span
               key={skill}
-              className="skill-badge border border-white/20 text-white/60 text-[10px] tracking-[0.15em] uppercase px-4 py-2 hover:border-accent hover:text-accent transition-all duration-300"
+              className="skill-badge border border-taupe/20 text-espresso/60 text-[10px] tracking-[0.15em] uppercase px-4 py-2 hover:border-terracotta hover:text-terracotta transition-all duration-300"
             >
               {skill}
             </span>

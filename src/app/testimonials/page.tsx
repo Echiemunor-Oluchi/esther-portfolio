@@ -70,7 +70,7 @@ export default function TestimonialsPage() {
   const rest = testimonials.slice(1)
 
   return (
-    <div className="bg-black min-h-screen">
+    <div className="bg-cream min-h-screen">
       {/* Hero */}
       <section
         ref={heroRef}
@@ -78,7 +78,7 @@ export default function TestimonialsPage() {
       >
         <SectionLabel>Kind Words</SectionLabel>
         <div className="mt-4 overflow-visible">
-          <h1 className="font-display text-[14vw] md:text-[10vw] leading-none text-white">
+          <h1 className="font-display text-[14vw] md:text-[10vw] leading-none text-espresso">
             {['WHAT THEY', 'SAY'].map((word, i) => (
               <div key={i} className="overflow-hidden block">
                 <span className="word inline-block">{word}</span>
@@ -91,22 +91,22 @@ export default function TestimonialsPage() {
       {/* Featured quote */}
       <section
         ref={(el) => { if (el) quotesRef.current[0] = el as HTMLElement }}
-        className="px-6 md:px-10 max-w-[1400px] mx-auto py-16 md:py-24 border-t border-white/5"
+        className="px-6 md:px-10 max-w-[1400px] mx-auto py-16 md:py-24 border-t border-taupe/5"
       >
         <div className="relative">
           <div
-            className="absolute -top-16 -left-4 md:-left-8 font-display text-[25vw] text-white/3 leading-none select-none pointer-events-none"
+            className="absolute -top-16 -left-4 md:-left-8 font-display text-[25vw] text-espresso/3 leading-none select-none pointer-events-none"
             aria-hidden="true"
           >
             "
           </div>
           <blockquote className="relative z-10 max-w-5xl">
-            <p className="font-display text-[5vw] md:text-[3.5vw] lg:text-[2.8vw] text-white leading-[1.25] italic">
+            <p className="font-display text-[5vw] md:text-[3.5vw] lg:text-[2.8vw] text-espresso leading-[1.25] italic">
               "{featured.quote}"
             </p>
             <footer className="mt-10 flex items-center gap-4">
-              <div className="w-10 h-px bg-accent" />
-              <cite className="not-italic text-xs tracking-[0.25em] uppercase text-white/40 font-semibold">
+              <div className="w-10 h-px bg-terracotta" />
+              <cite className="not-italic text-xs tracking-[0.25em] uppercase text-espresso/40 font-semibold">
                 {featured.attribution}
               </cite>
             </footer>
@@ -115,25 +115,25 @@ export default function TestimonialsPage() {
       </section>
 
       {/* More testimonials */}
-      <section className="px-6 md:px-10 max-w-[1400px] mx-auto pb-24 border-t border-white/5">
+      <section className="px-6 md:px-10 max-w-[1400px] mx-auto pb-24 border-t border-taupe/5">
         <div className="pt-16 grid md:grid-cols-2 gap-8">
           {rest.map((t, i) => (
             <article
               key={i}
               ref={(el) => { if (el) quotesRef.current[i + 1] = el as HTMLElement }}
-              className="bg-charcoal p-8 md:p-10 border border-white/5 relative"
+              className="bg-white p-8 md:p-10 border border-taupe/5 relative"
             >
               <div
-                className="absolute top-4 right-6 font-display text-8xl text-white/5 leading-none select-none"
+                className="absolute top-4 right-6 font-display text-8xl text-espresso/5 leading-none select-none"
                 aria-hidden="true"
               >
                 "
               </div>
               <blockquote>
-                <p className="text-white/60 text-sm leading-relaxed italic">"{t.quote}"</p>
+                <p className="text-espresso/60 text-sm leading-relaxed italic">"{t.quote}"</p>
                 <footer className="mt-6 flex items-center gap-3">
-                  <div className="w-4 h-px bg-accent/50" />
-                  <cite className="not-italic text-[10px] tracking-[0.2em] uppercase text-white/30 font-semibold">
+                  <div className="w-4 h-px bg-terracotta/50" />
+                  <cite className="not-italic text-[10px] tracking-[0.2em] uppercase text-espresso/30 font-semibold">
                     {t.attribution}
                   </cite>
                 </footer>
@@ -145,12 +145,12 @@ export default function TestimonialsPage() {
 
       {/* CTA */}
       <div className="px-6 md:px-10 max-w-[1400px] mx-auto pb-20 text-center">
-        <p className="text-white/30 text-sm mb-6">Ready to add your name to this list?</p>
+        <p className="text-espresso/30 text-sm mb-6">Ready to add your name to this list?</p>
         <a
           href="https://wa.me/2348034699451"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-3 bg-accent text-white font-bold text-xs tracking-[0.15em] uppercase px-8 py-4 glow-pulse hover:bg-accent-dim transition-colors duration-300"
+          className="inline-flex items-center gap-3 bg-terracotta text-cream font-bold text-xs tracking-[0.15em] uppercase px-8 py-4 hover:bg-terracotta-dim transition-colors duration-300"
         >
           Start a Conversation
         </a>

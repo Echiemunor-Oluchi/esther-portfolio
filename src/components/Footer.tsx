@@ -42,12 +42,12 @@ export function Footer() {
   }, [])
 
   return (
-    <footer className="bg-off-black border-t border-white/5 overflow-hidden">
+    <footer className="bg-cream border-t border-taupe/5 overflow-hidden">
       {/* Big CTA */}
       <div className="max-w-[1400px] mx-auto px-6 md:px-10 pt-20 md:pt-32 pb-12 text-center">
         <h2
           ref={headlineRef}
-          className="font-display text-[18vw] md:text-[14vw] leading-none text-white float-anim"
+          className="font-display text-[18vw] md:text-[14vw] leading-none text-espresso float-anim"
         >
           LET'S CREATE
         </h2>
@@ -57,7 +57,7 @@ export function Footer() {
             href="https://wa.me/2348034699451"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 bg-accent text-white font-bold text-sm tracking-[0.1em] uppercase px-8 py-4 glow-pulse hover:bg-accent-dim transition-colors duration-300"
+            className="inline-flex items-center gap-3 bg-terracotta text-cream font-bold text-sm tracking-[0.1em] uppercase px-8 py-4 hover:bg-terracotta-dim transition-colors duration-300"
             data-cursor="CHAT"
           >
             <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
@@ -67,7 +67,7 @@ export function Footer() {
           </a>
           <Link
             href="/work"
-            className="text-sm tracking-[0.1em] uppercase text-white/60 hover:text-white border border-white/20 hover:border-white/60 px-8 py-4 transition-all duration-300"
+            className="text-sm tracking-[0.1em] uppercase text-espresso/60 hover:text-espresso border border-taupe/20 hover:border-taupe/60 px-8 py-4 transition-all duration-300"
           >
             View Work First
           </Link>
@@ -75,13 +75,13 @@ export function Footer() {
       </div>
 
       {/* Bottom nav */}
-      <div className="max-w-[1400px] mx-auto px-6 md:px-10 py-10 border-t border-white/5">
+      <div className="max-w-[1400px] mx-auto px-6 md:px-10 py-10 border-t border-taupe/5">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
           <div>
-            <Link href="/" className="font-display text-4xl text-white/20 hover:text-white/60 transition-colors duration-300">
+            <Link href="/" className="font-display text-4xl text-espresso/20 hover:text-espresso/60 transition-colors duration-300">
               EO
             </Link>
-            <p className="mt-2 text-xs text-white/30 tracking-wide">
+            <p className="mt-2 text-xs text-espresso/30 tracking-wide">
               Port Harcourt, Nigeria
             </p>
           </div>
@@ -92,7 +92,7 @@ export function Footer() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="nav-link text-xs tracking-[0.12em] uppercase text-white/40 hover:text-white/80 transition-colors duration-300 w-fit"
+                  className="nav-link text-xs tracking-[0.12em] uppercase text-espresso/40 hover:text-espresso/80 transition-colors duration-300 w-fit"
                 >
                   {link.label}
                 </Link>
@@ -105,7 +105,7 @@ export function Footer() {
                   href={link.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="nav-link text-xs tracking-[0.12em] uppercase text-white/40 hover:text-white/80 transition-colors duration-300 w-fit"
+                  className="nav-link text-xs tracking-[0.12em] uppercase text-espresso/40 hover:text-espresso/80 transition-colors duration-300 w-fit"
                 >
                   {link.label}
                 </a>
@@ -114,9 +114,9 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-10 pt-6 border-t border-white/5 flex flex-col sm:flex-row justify-between items-center gap-3 text-white/20 text-[10px] tracking-[0.1em] uppercase">
+        <div className="mt-10 pt-6 border-t border-taupe/5 flex flex-col sm:flex-row justify-between items-center gap-3 text-espresso/20 text-[10px] tracking-[0.1em] uppercase">
           <span>© {new Date().getFullYear()} Esther Ozurumba. All rights reserved.</span>
-          <span>Video Editor · Video Strategist · Social Media Strategist</span>
+          <span>Video Editor · Video Strategist · Content Strategist</span>
         </div>
       </div>
     </footer>

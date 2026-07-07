@@ -26,9 +26,9 @@ export function Button({
     'inline-flex items-center gap-2 font-semibold text-xs tracking-[0.15em] uppercase px-8 py-4 transition-all duration-300 relative overflow-hidden group'
 
   const variants = {
-    primary: 'bg-accent text-white hover:bg-accent-dim',
-    ghost: 'text-white/80 hover:text-white border-b border-white/20 hover:border-accent px-0 py-1',
-    outline: 'border border-white/20 text-white hover:border-accent hover:text-accent',
+    primary: 'bg-terracotta text-cream hover:bg-terracotta-dim',
+    ghost: 'text-espresso/80 hover:text-espresso border-b border-taupe/20 hover:border-terracotta px-0 py-1',
+    outline: 'border border-taupe/20 text-espresso hover:border-terracotta hover:text-terracotta',
   }
 
   const motionProps = {

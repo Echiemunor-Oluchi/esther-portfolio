@@ -45,14 +45,14 @@ export function Navbar() {
       <nav
         ref={navRef}
         className={`fixed top-0 left-0 right-0 z-[9990] transition-all duration-500 ${
-          scrolled ? 'bg-black/90 backdrop-blur-sm border-b border-white/5' : 'bg-transparent'
+          scrolled ? 'bg-cream/90 backdrop-blur-sm border-b border-taupe/5' : 'bg-transparent'
         }`}
       >
         <div className="max-w-[1400px] mx-auto px-6 md:px-10 flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <Link
             href="/"
-            className="font-display text-2xl md:text-3xl tracking-wider text-white hover:text-accent transition-colors duration-300"
+            className="font-display text-2xl md:text-3xl tracking-wider text-espresso hover:text-terracotta transition-colors duration-300"
           >
             EO
           </Link>
@@ -64,7 +64,7 @@ export function Navbar() {
                 key={link.href}
                 href={link.href}
                 className={`nav-link text-xs font-semibold tracking-[0.15em] uppercase transition-colors duration-300 pb-0.5 ${
-                  pathname === link.href ? 'text-accent' : 'text-white/80 hover:text-white'
+                  pathname === link.href ? 'text-terracotta' : 'text-espresso/80 hover:text-espresso'
                 }`}
               >
                 {link.label}
@@ -79,12 +79,12 @@ export function Navbar() {
             aria-label={isOpen ? 'Close menu' : 'Open menu'}
           >
             <span
-              className={`block h-px bg-white transition-all duration-300 ${
+              className={`block h-px bg-espresso transition-all duration-300 ${
                 isOpen ? 'w-6 rotate-45 translate-y-[5px]' : 'w-6'
               }`}
             />
             <span
-              className={`block h-px bg-white transition-all duration-300 ${
+              className={`block h-px bg-espresso transition-all duration-300 ${
                 isOpen ? 'w-6 -rotate-45 -translate-y-[3px]' : 'w-4 group-hover:w-6'
               }`}
             />
@@ -100,7 +100,7 @@ export function Navbar() {
             animate={{ clipPath: 'inset(0 0 0% 0)' }}
             exit={{ clipPath: 'inset(0 0 100% 0)' }}
             transition={{ duration: 0.6, ease: [0.76, 0, 0.24, 1] }}
-            className="fixed inset-0 bg-black z-[9989] flex flex-col justify-center items-start px-8 md:px-16"
+            className="fixed inset-0 bg-cream z-[9989] flex flex-col justify-center items-start px-8 md:px-16"
           >
             <nav className="flex flex-col gap-2">
               {navLinks.map((link, i) => (
@@ -113,8 +113,8 @@ export function Navbar() {
                 >
                   <Link
                     href={link.href}
-                    className={`block font-display text-[12vw] md:text-[8vw] leading-none hover:text-accent transition-colors duration-300 ${
-                      pathname === link.href ? 'text-accent' : 'text-white'
+                    className={`block font-display text-[12vw] md:text-[8vw] leading-none hover:text-terracotta transition-colors duration-300 ${
+                      pathname === link.href ? 'text-terracotta' : 'text-espresso'
                     }`}
                   >
                     {link.label}
@@ -127,7 +127,7 @@ export function Navbar() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.5, duration: 0.4 }}
-              className="absolute bottom-10 left-8 md:left-16 text-white/40 text-xs tracking-[0.2em] uppercase"
+              className="absolute bottom-10 left-8 md:left-16 text-espresso/40 text-xs tracking-[0.2em] uppercase"
             >
               Port Harcourt, Nigeria
             </motion.div>

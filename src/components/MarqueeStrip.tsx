@@ -11,7 +11,7 @@ export function MarqueeStrip({ items, speed = 20, direction = 'left', className 
   const doubled = [...items, ...items]
 
   return (
-    <div className={`overflow-hidden py-4 border-y border-white/5 ${className}`}>
+    <div className={`overflow-hidden py-4 border-y border-taupe/5 ${className}`}>
       <div
         className="flex gap-12 w-max"
         style={{
@@ -23,10 +23,10 @@ export function MarqueeStrip({ items, speed = 20, direction = 'left', className 
         {doubled.map((item, i) => (
           <div
             key={i}
-            className="flex items-center gap-12 text-white/20 text-xs tracking-[0.3em] uppercase font-semibold whitespace-nowrap"
+            className="flex items-center gap-12 text-espresso/20 text-xs tracking-[0.3em] uppercase font-semibold whitespace-nowrap"
           >
             <span>{item}</span>
-            <span className="text-accent">✦</span>
+            <span className="text-terracotta">✦</span>
           </div>
         ))}
       </div>

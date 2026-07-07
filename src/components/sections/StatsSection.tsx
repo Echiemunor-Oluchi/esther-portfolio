@@ -44,19 +44,19 @@ function StatCard({ value, suffix, label, description, index }: typeof stats[0] 
   }, [value, index])
 
   return (
-    <div ref={cardRef} className="border-l border-white/10 pl-6 py-4" style={{ opacity: 0 }}>
-      <div className="font-display text-[10vw] md:text-[5vw] text-white leading-none tabular-nums">
+    <div ref={cardRef} className="border-l border-taupe/10 pl-6 py-4" style={{ opacity: 0 }}>
+      <div className="font-display text-[10vw] md:text-[5vw] text-espresso leading-none tabular-nums">
         {count}{suffix}
       </div>
-      <div className="mt-2 text-white/80 text-xs font-semibold tracking-[0.1em] uppercase">{label}</div>
-      <div className="mt-1 text-white/30 text-xs">{description}</div>
+      <div className="mt-2 text-espresso/80 text-xs font-semibold tracking-[0.1em] uppercase">{label}</div>
+      <div className="mt-1 text-espresso/30 text-xs">{description}</div>
     </div>
   )
 }
 
 export function StatsSection() {
   return (
-    <section className="bg-off-black py-20 md:py-32 overflow-hidden">
+    <section className="bg-cream py-20 md:py-32 overflow-hidden">
       <div className="max-w-[1400px] mx-auto px-6 md:px-10">
         <SectionLabel index="03">By the Numbers</SectionLabel>
 

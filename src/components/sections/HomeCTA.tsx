@@ -5,15 +5,15 @@ import { SectionLabel } from '@/components/SectionLabel'
 
 export function HomeCTA() {
   return (
-    <section className="bg-off-black py-20 md:py-32 overflow-hidden">
+    <section className="bg-cream py-20 md:py-32 overflow-hidden">
       <div className="max-w-[1400px] mx-auto px-6 md:px-10 text-center">
         <SectionLabel className="justify-center">Start a Project</SectionLabel>
 
-        <h2 className="font-display text-[14vw] md:text-[9vw] text-white mt-6 leading-none">
-          READY TO <span className="text-accent">CREATE?</span>
+        <h2 className="font-display text-[14vw] md:text-[9vw] text-espresso mt-6 leading-none">
+          READY TO <span className="text-terracotta">CREATE?</span>
         </h2>
 
-        <p className="mt-6 text-white/40 text-sm md:text-base max-w-md mx-auto">
+        <p className="mt-6 text-espresso/40 text-sm md:text-base max-w-md mx-auto">
           Let's make something cinematic together. Drop a message on WhatsApp. That's where the real ones start.
         </p>
 
@@ -22,7 +22,7 @@ export function HomeCTA() {
             href="https://wa.me/2348034699451"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 bg-accent text-white font-bold text-xs tracking-[0.15em] uppercase px-10 py-5 glow-pulse hover:bg-accent-dim transition-colors duration-300"
+            className="inline-flex items-center gap-3 bg-terracotta text-cream font-bold text-xs tracking-[0.15em] uppercase px-10 py-5 hover:bg-terracotta-dim transition-colors duration-300"
             data-cursor="CHAT"
           >
             <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
@@ -32,7 +32,7 @@ export function HomeCTA() {
           </a>
           <Link
             href="/work"
-            className="text-white/50 hover:text-white text-xs tracking-[0.15em] uppercase font-semibold transition-colors duration-300 border border-white/20 hover:border-white/60 px-10 py-5"
+            className="text-espresso/50 hover:text-espresso text-xs tracking-[0.15em] uppercase font-semibold transition-colors duration-300 border border-taupe/20 hover:border-taupe/60 px-10 py-5"
           >
             View Work
           </Link>

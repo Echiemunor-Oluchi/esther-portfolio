@@ -66,7 +66,7 @@ export function FeaturedWork() {
   }, [])
 
   return (
-    <section ref={sectionRef} className="relative overflow-hidden bg-off-black">
+    <section ref={sectionRef} className="relative overflow-hidden bg-cream">
       <div className="max-w-[1400px] mx-auto px-6 md:px-10 pt-20 md:pt-28 pb-6 md:pb-0">
         <SectionLabel index="01">Featured Work</SectionLabel>
       </div>
@@ -81,29 +81,29 @@ export function FeaturedWork() {
           >
             <Link href={`/work/${project.slug}`} className="group block" data-cursor="VIEW">
               {/* Thumbnail */}
-              <div className="relative overflow-hidden aspect-[4/5] bg-charcoal mb-5">
+              <div className="relative overflow-hidden aspect-[4/5] bg-white mb-5">
                 <div
                   className="absolute inset-0 flex flex-col items-center justify-center gap-4"
-                  style={{ background: `linear-gradient(135deg, ${project.coverColor}cc, #0A0A0A)` }}
+                  style={{ background: `linear-gradient(135deg, ${project.coverColor}cc, #2B231C)` }}
                 >
-                  <div className="text-white/10 font-display text-[10vw] md:text-[5vw] leading-none text-center px-4">
+                  <div className="text-cream/20 font-display text-[10vw] md:text-[5vw] leading-none text-center px-4">
                     {project.client.toUpperCase()}
                   </div>
                   {/* Platform icon */}
                   <div className="absolute bottom-4 left-4">
-                    <span className="text-[9px] tracking-[0.2em] uppercase text-white/30 font-semibold border border-white/10 px-2 py-1">
+                    <span className="text-[9px] tracking-[0.2em] uppercase text-cream/70 font-semibold border border-cream/20 px-2 py-1">
                       {project.platform}
                     </span>
                   </div>
                 </div>
 
                 {/* Hover overlay */}
-                <div className="absolute inset-0 bg-accent/0 group-hover:bg-accent/10 transition-colors duration-500" />
+                <div className="absolute inset-0 bg-terracotta/0 group-hover:bg-terracotta/10 transition-colors duration-500" />
 
                 {/* Play icon */}
                 <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <div className="w-16 h-16 rounded-full border border-accent/70 flex items-center justify-center">
-                    <svg className="w-6 h-6 text-accent ml-1" fill="currentColor" viewBox="0 0 24 24">
+                  <div className="w-16 h-16 rounded-full border border-terracotta/70 flex items-center justify-center">
+                    <svg className="w-6 h-6 text-terracotta ml-1" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M8 5v14l11-7z"/>
                     </svg>
                   </div>
@@ -112,13 +112,13 @@ export function FeaturedWork() {
 
               {/* Card info */}
               <div>
-                <div className="text-white/30 text-[9px] tracking-[0.25em] uppercase mb-2">
+                <div className="text-espresso/40 text-[9px] tracking-[0.25em] uppercase mb-2">
                   {project.role.join(' · ')}
                 </div>
-                <h3 className="font-display text-3xl md:text-4xl text-white group-hover:text-accent transition-colors duration-300 leading-tight">
+                <h3 className="font-display text-3xl md:text-4xl text-espresso group-hover:text-terracotta transition-colors duration-300 leading-tight">
                   {project.client.toUpperCase()}
                 </h3>
-                <p className="text-white/40 text-xs mt-2 leading-relaxed">{project.tagline}</p>
+                <p className="text-espresso/50 text-xs mt-2 leading-relaxed">{project.tagline}</p>
               </div>
             </Link>
           </div>
@@ -130,12 +130,12 @@ export function FeaturedWork() {
             href="/work"
             className="group flex flex-col items-center gap-4 text-center"
           >
-            <div className="w-16 h-16 rounded-full border border-white/20 group-hover:border-accent flex items-center justify-center transition-colors duration-300">
-              <svg className="w-5 h-5 text-white group-hover:text-accent transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="w-16 h-16 rounded-full border border-taupe/30 group-hover:border-terracotta flex items-center justify-center transition-colors duration-300">
+              <svg className="w-5 h-5 text-espresso group-hover:text-terracotta transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
             </div>
-            <span className="text-white/40 group-hover:text-white text-[10px] tracking-[0.25em] uppercase font-semibold transition-colors duration-300">
+            <span className="text-espresso/50 group-hover:text-espresso text-[10px] tracking-[0.25em] uppercase font-semibold transition-colors duration-300">
               View All Work
             </span>
           </Link>

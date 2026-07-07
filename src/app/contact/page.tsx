@@ -85,7 +85,7 @@ export default function ContactPage() {
   }, [])
 
   return (
-    <div className="bg-black min-h-screen">
+    <div className="bg-cream min-h-screen">
       {/* Hero */}
       <section
         ref={heroRef}
@@ -93,7 +93,7 @@ export default function ContactPage() {
       >
         <SectionLabel>Get in Touch</SectionLabel>
         <div className="mt-4 overflow-visible">
-          <h1 className="font-display leading-none text-white">
+          <h1 className="font-display leading-none text-espresso">
             {["LET'S CREATE", 'SOMETHING', 'CINEMATIC'].map((word, i) => (
               <div key={i} className="overflow-hidden block">
                 <span
@@ -113,17 +113,17 @@ export default function ContactPage() {
         <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-start">
 
           {/* Left: WhatsApp card */}
-          <div ref={ctaRef} className="bg-charcoal border border-white/5 p-10 md:p-16">
-            <div className="text-white/30 text-[10px] tracking-[0.3em] uppercase font-semibold mb-4">Primary Contact</div>
-            <h2 className="font-display text-4xl md:text-5xl text-white mb-4">WHATSAPP</h2>
-            <p className="text-white/40 text-sm leading-relaxed mb-8 max-w-sm">
+          <div ref={ctaRef} className="bg-white border border-taupe/5 p-10 md:p-16">
+            <div className="text-espresso/30 text-[10px] tracking-[0.3em] uppercase font-semibold mb-4">Primary Contact</div>
+            <h2 className="font-display text-4xl md:text-5xl text-espresso mb-4">WHATSAPP</h2>
+            <p className="text-espresso/40 text-sm leading-relaxed mb-8 max-w-sm">
               The fastest way to start. Send me a message about your project. No forms, no waiting, just a real conversation.
             </p>
             <a
               href="https://wa.me/2348034699451"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 bg-accent text-white font-bold text-sm tracking-[0.1em] uppercase px-10 py-5 glow-pulse hover:bg-accent-dim transition-colors duration-300"
+              className="inline-flex items-center gap-3 bg-terracotta text-cream font-bold text-sm tracking-[0.1em] uppercase px-10 py-5 hover:bg-terracotta-dim transition-colors duration-300"
               data-cursor="CHAT"
             >
               <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
@@ -142,39 +142,39 @@ export default function ContactPage() {
               className="object-cover object-top"
               sizes="(max-width: 768px) 0px, 50vw"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-espresso/40 to-transparent" />
           </div>
 
         </div>
       </section>
 
       {/* Social links */}
-      <section className="px-6 md:px-10 max-w-[1400px] mx-auto pb-20 border-t border-white/5 pt-16">
-        <div className="text-white/20 text-[10px] tracking-[0.3em] uppercase font-semibold mb-8">Elsewhere</div>
+      <section className="px-6 md:px-10 max-w-[1400px] mx-auto pb-20 border-t border-taupe/5 pt-16">
+        <div className="text-espresso/20 text-[10px] tracking-[0.3em] uppercase font-semibold mb-8">Elsewhere</div>
         <ul className="space-y-0">
           {socialLinks.map((link, i) => (
             <li
               key={link.href}
               ref={(el) => { if (el) linksRef.current[i] = el }}
-              className="border-b border-white/5 last:border-0"
+              className="border-b border-taupe/5 last:border-0"
             >
               <a
                 href={link.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group flex items-center justify-between py-6 hover:bg-charcoal/30 px-2 -mx-2 transition-colors duration-300"
+                className="group flex items-center justify-between py-6 hover:bg-taupe/10 px-2 -mx-2 transition-colors duration-300"
                 data-cursor="VISIT"
               >
                 <div className="flex items-center gap-6">
-                  <span className="font-display text-3xl md:text-4xl text-white group-hover:text-accent transition-colors duration-300">
+                  <span className="font-display text-3xl md:text-4xl text-espresso group-hover:text-terracotta transition-colors duration-300">
                     {link.label.toUpperCase()}
                   </span>
-                  <span className="text-white/20 text-xs tracking-[0.1em] hidden md:block">{link.desc}</span>
+                  <span className="text-espresso/20 text-xs tracking-[0.1em] hidden md:block">{link.desc}</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <span className="text-white/30 text-xs tracking-[0.1em] font-mono">{link.handle}</span>
+                  <span className="text-espresso/30 text-xs tracking-[0.1em] font-mono">{link.handle}</span>
                   <svg
-                    className="w-4 h-4 text-white/20 group-hover:text-accent transition-colors duration-300 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform"
+                    className="w-4 h-4 text-espresso/20 group-hover:text-terracotta transition-colors duration-300 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -190,8 +190,8 @@ export default function ContactPage() {
 
       {/* Location */}
       <div className="px-6 md:px-10 max-w-[1400px] mx-auto pb-20">
-        <div className="flex items-center gap-3 text-white/20 text-xs tracking-[0.2em] uppercase">
-          <span className="w-4 h-px bg-white/20" />
+        <div className="flex items-center gap-3 text-espresso/20 text-xs tracking-[0.2em] uppercase">
+          <span className="w-4 h-px bg-taupe/40" />
           <span>Based in Port Harcourt, Nigeria. Working with brands everywhere.</span>
         </div>
       </div>

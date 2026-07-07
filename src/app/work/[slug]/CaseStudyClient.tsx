@@ -68,7 +68,7 @@ export function CaseStudyClient({ project, adjacent }: Props) {
   }, [])
 
   return (
-    <div className="bg-black min-h-screen">
+    <div className="bg-cream min-h-screen">
       {/* Hero */}
       <section
         ref={heroRef}
@@ -86,17 +86,17 @@ export function CaseStudyClient({ project, adjacent }: Props) {
           <div className="flex items-center gap-3 mb-6">
             <Link
               href="/work"
-              className="text-white/30 hover:text-white text-[10px] tracking-[0.25em] uppercase font-semibold transition-colors duration-300"
+              className="text-espresso/30 hover:text-espresso text-[10px] tracking-[0.25em] uppercase font-semibold transition-colors duration-300"
             >
               Work
             </Link>
-            <span className="text-white/20">/</span>
-            <span className="text-accent text-[10px] tracking-[0.25em] uppercase font-semibold">
+            <span className="text-espresso/20">/</span>
+            <span className="text-terracotta text-[10px] tracking-[0.25em] uppercase font-semibold">
               {project.client}
             </span>
           </div>
 
-          <h1 className="font-display leading-none text-white">
+          <h1 className="font-display leading-none text-espresso">
             {project.client.toUpperCase().split(' ').map((word, i) => (
               <div key={i} className="overflow-hidden block">
                 <span
@@ -114,13 +114,13 @@ export function CaseStudyClient({ project, adjacent }: Props) {
               href={project.profileUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-accent text-xs tracking-[0.15em] uppercase font-semibold border border-accent/30 px-4 py-2 hover:bg-accent hover:text-white transition-all duration-300"
+              className="inline-flex items-center gap-2 text-terracotta text-xs tracking-[0.15em] uppercase font-semibold border border-terracotta/30 px-4 py-2 hover:bg-terracotta hover:text-cream transition-all duration-300"
             >
               {platformIcon(project.platform)}
               View on {project.platform}
             </a>
             {project.role.map((r) => (
-              <span key={r} className="text-white/30 text-[10px] tracking-[0.2em] uppercase border border-white/10 px-3 py-1.5">
+              <span key={r} className="text-espresso/30 text-[10px] tracking-[0.2em] uppercase border border-taupe/10 px-3 py-1.5">
                 {r}
               </span>
             ))}
@@ -129,33 +129,33 @@ export function CaseStudyClient({ project, adjacent }: Props) {
       </section>
 
       {/* Divider */}
-      <div className="h-px bg-white/5 mx-6 md:mx-10" />
+      <div className="h-px bg-taupe/15 mx-6 md:mx-10" />
 
       {/* Description */}
       <section className="px-6 md:px-10 max-w-[1400px] mx-auto py-16 md:py-20">
         <div className="grid md:grid-cols-2 gap-12 md:gap-20">
           <div>
             <SectionLabel>About This Project</SectionLabel>
-            <p className="mt-6 text-white/60 text-sm md:text-base leading-relaxed">
+            <p className="mt-6 text-espresso/60 text-sm md:text-base leading-relaxed">
               {project.description}
             </p>
           </div>
           <div className="grid grid-cols-2 gap-6">
             <div>
-              <div className="text-white/20 text-[9px] tracking-[0.25em] uppercase mb-2">Platform</div>
-              <div className="text-white font-semibold text-sm">{project.platform}</div>
+              <div className="text-espresso/20 text-[9px] tracking-[0.25em] uppercase mb-2">Platform</div>
+              <div className="text-espresso font-semibold text-sm">{project.platform}</div>
             </div>
             <div>
-              <div className="text-white/20 text-[9px] tracking-[0.25em] uppercase mb-2">Role</div>
-              <div className="text-white font-semibold text-sm">{project.role.join(', ')}</div>
+              <div className="text-espresso/20 text-[9px] tracking-[0.25em] uppercase mb-2">Role</div>
+              <div className="text-espresso font-semibold text-sm">{project.role.join(', ')}</div>
             </div>
             <div>
-              <div className="text-white/20 text-[9px] tracking-[0.25em] uppercase mb-2">Videos</div>
-              <div className="text-white font-semibold text-sm">{project.videos.length}</div>
+              <div className="text-espresso/20 text-[9px] tracking-[0.25em] uppercase mb-2">Videos</div>
+              <div className="text-espresso font-semibold text-sm">{project.videos.length}</div>
             </div>
             <div>
-              <div className="text-white/20 text-[9px] tracking-[0.25em] uppercase mb-2">Content Type</div>
-              <div className="text-white font-semibold text-sm">Short Form</div>
+              <div className="text-espresso/20 text-[9px] tracking-[0.25em] uppercase mb-2">Content Type</div>
+              <div className="text-espresso font-semibold text-sm">Short Form</div>
             </div>
           </div>
         </div>
@@ -172,7 +172,7 @@ export function CaseStudyClient({ project, adjacent }: Props) {
               ref={(el) => { if (el) videosRef.current[i] = el }}
             >
               {video.title && (
-                <div className="mb-3 text-white/30 text-[10px] tracking-[0.2em] uppercase font-semibold">
+                <div className="mb-3 text-espresso/30 text-[10px] tracking-[0.2em] uppercase font-semibold">
                   {String(i + 1).padStart(2, '0')}. {video.title}
                 </div>
               )}
@@ -188,7 +188,7 @@ export function CaseStudyClient({ project, adjacent }: Props) {
 
       {/* Growth metrics (Youth Mama Mentors only) */}
       {project.hasGrowthSection && project.growthMetrics && (
-        <section className="px-6 md:px-10 max-w-[1400px] mx-auto border-t border-white/5">
+        <section className="px-6 md:px-10 max-w-[1400px] mx-auto border-t border-taupe/5">
           <GrowthMetrics
             metrics={project.growthMetrics}
             narrative={project.strategyNarrative}
@@ -197,7 +197,7 @@ export function CaseStudyClient({ project, adjacent }: Props) {
       )}
 
       {/* Next project */}
-      <div className="border-t border-white/5 mt-8">
+      <div className="border-t border-taupe/5 mt-8">
         <div className="max-w-[1400px] mx-auto px-6 md:px-10 py-16 md:py-20">
           <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-8">
             {adjacent.prev && (
@@ -205,8 +205,8 @@ export function CaseStudyClient({ project, adjacent }: Props) {
                 href={`/work/${adjacent.prev.slug}`}
                 className="group flex flex-col gap-2"
               >
-                <span className="text-white/20 text-[9px] tracking-[0.25em] uppercase">← Previous</span>
-                <span className="font-display text-3xl md:text-5xl text-white/40 group-hover:text-white transition-colors duration-300">
+                <span className="text-espresso/20 text-[9px] tracking-[0.25em] uppercase">← Previous</span>
+                <span className="font-display text-3xl md:text-5xl text-espresso/40 group-hover:text-espresso transition-colors duration-300">
                   {adjacent.prev.client.toUpperCase()}
                 </span>
               </Link>
@@ -216,8 +216,8 @@ export function CaseStudyClient({ project, adjacent }: Props) {
                 href={`/work/${adjacent.next.slug}`}
                 className="group flex flex-col gap-2 sm:text-right"
               >
-                <span className="text-white/20 text-[9px] tracking-[0.25em] uppercase">Next →</span>
-                <span className="font-display text-3xl md:text-5xl text-white/40 group-hover:text-white transition-colors duration-300">
+                <span className="text-espresso/20 text-[9px] tracking-[0.25em] uppercase">Next →</span>
+                <span className="font-display text-3xl md:text-5xl text-espresso/40 group-hover:text-espresso transition-colors duration-300">
                   {adjacent.next.client.toUpperCase()}
                 </span>
               </Link>

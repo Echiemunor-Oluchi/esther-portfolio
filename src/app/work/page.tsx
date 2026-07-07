@@ -10,8 +10,8 @@ import { MarqueeStrip } from '@/components/MarqueeStrip'
 
 gsap.registerPlugin(ScrollTrigger)
 
-type FilterTag = 'All' | 'Video Editing' | 'Video Strategy' | 'Social Media Strategy'
-const filters: FilterTag[] = ['All', 'Video Editing', 'Video Strategy', 'Social Media Strategy']
+type FilterTag = 'All' | 'Video Editing' | 'Video Strategy' | 'Content Strategy'
+const filters: FilterTag[] = ['All', 'Video Editing', 'Video Strategy', 'Content Strategy']
 
 export default function WorkPage() {
   const [activeFilter, setActiveFilter] = useState<FilterTag>('All')
@@ -54,14 +54,14 @@ export default function WorkPage() {
   }, [filtered])
 
   return (
-    <div className="bg-black min-h-screen">
+    <div className="bg-cream min-h-screen">
       {/* Hero */}
       <section className="pt-32 md:pt-40 pb-16 md:pb-20 px-6 md:px-10 max-w-[1400px] mx-auto">
         <SectionLabel>Selected Work</SectionLabel>
         <div className="overflow-hidden mt-4">
           <h1
             ref={headlineRef}
-            className="font-display text-[18vw] md:text-[12vw] leading-none text-white"
+            className="font-display text-[18vw] md:text-[12vw] leading-none text-espresso"
           >
             {['THE', 'WORK'].map((word, i) => (
               <span key={i} className="word-wrapper block overflow-hidden">
@@ -70,7 +70,7 @@ export default function WorkPage() {
             ))}
           </h1>
         </div>
-        <p className="mt-6 text-white/40 text-sm max-w-sm">
+        <p className="mt-6 text-espresso/40 text-sm max-w-sm">
           Short-form content crafted for brands and creators across TikTok and Instagram.
         </p>
       </section>
@@ -89,8 +89,8 @@ export default function WorkPage() {
               onClick={() => setActiveFilter(f)}
               className={`text-[10px] tracking-[0.2em] uppercase font-semibold px-4 py-2 border transition-all duration-300 ${
                 activeFilter === f
-                  ? 'border-accent bg-accent text-white'
-                  : 'border-white/20 text-white/40 hover:border-white/50 hover:text-white'
+                  ? 'border-terracotta bg-terracotta text-cream'
+                  : 'border-taupe/20 text-espresso/40 hover:border-taupe/50 hover:text-espresso'
               }`}
             >
               {f}
@@ -113,46 +113,46 @@ export default function WorkPage() {
                 data-cursor="VIEW"
               >
                 {/* Thumbnail */}
-                <div className="relative aspect-[4/5] overflow-hidden bg-charcoal mb-4">
+                <div className="relative aspect-[4/5] overflow-hidden bg-white mb-4">
                   <div
                     className="absolute inset-0 flex flex-col items-center justify-center"
-                    style={{ background: `linear-gradient(135deg, ${project.coverColor}aa, #0A0A0A)` }}
+                    style={{ background: `linear-gradient(135deg, ${project.coverColor}aa, #2B231C)` }}
                   >
-                    <div className="font-display text-[8vw] md:text-[4vw] text-white/10 text-center px-6 leading-none">
+                    <div className="font-display text-[8vw] md:text-[4vw] text-cream/20 text-center px-6 leading-none">
                       {project.client.toUpperCase()}
                     </div>
                   </div>
 
                   {/* Platform */}
-                  <div className="absolute top-4 left-4 text-[9px] tracking-[0.2em] uppercase text-white/40 border border-white/10 px-2 py-1">
+                  <div className="absolute top-4 left-4 text-[9px] tracking-[0.2em] uppercase text-cream/70 border border-cream/20 px-2 py-1">
                     {project.platform}
                   </div>
 
                   {/* Hover */}
-                  <div className="absolute inset-0 bg-accent/0 group-hover:bg-accent/10 transition-all duration-500" />
+                  <div className="absolute inset-0 bg-terracotta/0 group-hover:bg-terracotta/10 transition-all duration-500" />
                   <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <div className="w-14 h-14 rounded-full border border-accent flex items-center justify-center">
-                      <svg className="w-5 h-5 text-accent ml-1" fill="currentColor" viewBox="0 0 24 24">
+                    <div className="w-14 h-14 rounded-full border border-terracotta flex items-center justify-center">
+                      <svg className="w-5 h-5 text-terracotta ml-1" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M8 5v14l11-7z"/>
                       </svg>
                     </div>
                   </div>
 
                   {/* Blue ring glow on hover */}
-                  <div className="absolute inset-0 border-2 border-accent/0 group-hover:border-accent/30 transition-all duration-500" />
+                  <div className="absolute inset-0 border-2 border-terracotta/0 group-hover:border-terracotta/30 transition-all duration-500" />
                 </div>
 
                 <div>
-                  <div className="text-white/30 text-[9px] tracking-[0.25em] uppercase mb-1">
+                  <div className="text-espresso/30 text-[9px] tracking-[0.25em] uppercase mb-1">
                     {project.role.join(' · ')}
                   </div>
-                  <h2 className="font-display text-2xl md:text-3xl text-white group-hover:text-accent transition-colors duration-300">
+                  <h2 className="font-display text-2xl md:text-3xl text-espresso group-hover:text-terracotta transition-colors duration-300">
                     {project.client.toUpperCase()}
                   </h2>
-                  <p className="text-white/30 text-xs mt-1 leading-relaxed">{project.tagline}</p>
+                  <p className="text-espresso/30 text-xs mt-1 leading-relaxed">{project.tagline}</p>
                   <div className="flex flex-wrap gap-2 mt-3">
                     {project.tags.slice(0, 3).map((tag) => (
-                      <span key={tag} className="text-[9px] tracking-[0.1em] uppercase text-white/25 border border-white/10 px-2 py-0.5">
+                      <span key={tag} className="text-[9px] tracking-[0.1em] uppercase text-espresso/25 border border-taupe/10 px-2 py-0.5">
                         {tag}
                       </span>
                     ))}

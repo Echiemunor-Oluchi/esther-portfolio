@@ -5,7 +5,7 @@ import { gsap } from 'gsap'
 import Link from 'next/link'
 import Image from 'next/image'
 
-const roles = ['Video Editor', 'Video Strategist', 'Social Media Strategist']
+const roles = ['Video Editor', 'Video Strategist', 'Content Strategist']
 
 export function Hero() {
   const containerRef = useRef<HTMLDivElement>(null)
@@ -70,19 +70,19 @@ export function Hero() {
   return (
     <section
       ref={containerRef}
-      className="relative min-h-screen flex items-center overflow-hidden bg-black"
+      className="relative min-h-screen flex items-center overflow-hidden bg-cream"
     >
       {/* Background */}
       <div className="absolute inset-0 overflow-hidden">
         <div
           ref={bgRef}
-          className="w-full h-full bg-gradient-to-br from-charcoal via-black to-black"
+          className="w-full h-full bg-gradient-to-br from-rose/20 via-cream to-cream"
           style={{ transformOrigin: 'center center' }}
         />
         {/* Vignette */}
         <div className="absolute inset-0 vignette" />
         {/* Blue accent glow */}
-        <div className="absolute bottom-0 left-1/4 w-[500px] h-[500px] rounded-full bg-accent/5 blur-[120px] pointer-events-none" />
+        <div className="absolute bottom-0 left-1/4 w-[500px] h-[500px] rounded-full bg-terracotta/5 blur-[120px] pointer-events-none" />
       </div>
 
       {/* Content */}
@@ -90,13 +90,13 @@ export function Hero() {
         {/* Left: text */}
         <div>
           {/* Label */}
-          <div className="mb-6 text-white/30 text-[10px] tracking-[0.35em] uppercase font-semibold">
+          <div className="mb-6 text-espresso/30 text-[10px] tracking-[0.35em] uppercase font-semibold">
             Portfolio 2026
           </div>
 
           {/* Name */}
           <div ref={nameRef} className="overflow-visible">
-            <h1 className="font-display text-[18vw] md:text-[13vw] lg:text-[11vw] leading-[0.88] text-white tracking-tight overflow-visible">
+            <h1 className="font-display text-[18vw] md:text-[13vw] lg:text-[11vw] leading-[0.88] text-espresso tracking-tight overflow-visible">
               {['ESTHER', 'OZURUMBA'].map((word, i) => (
                 <div key={i} className="overflow-hidden block">
                   <span className="word inline-block">{word}</span>
@@ -107,9 +107,9 @@ export function Hero() {
 
           {/* Role cycling */}
           <div className="mt-6 md:mt-8 flex items-center gap-4">
-            <span className="w-8 h-px bg-accent flex-shrink-0" />
+            <span className="w-8 h-px bg-terracotta flex-shrink-0" />
             <div className="overflow-hidden h-7">
-              <div ref={roleRef} className="text-accent text-sm md:text-base tracking-[0.12em] uppercase font-semibold">
+              <div ref={roleRef} className="text-terracotta text-sm md:text-base tracking-[0.12em] uppercase font-semibold">
                 {displayRole}
               </div>
             </div>
@@ -117,7 +117,7 @@ export function Hero() {
 
           {/* Tagline */}
           <div ref={subRef} className="mt-6 max-w-md">
-            <p className="text-white/50 text-sm md:text-base leading-relaxed">
+            <p className="text-espresso/50 text-sm md:text-base leading-relaxed">
               Cinematic short form content for brands that deserve to be seen. Based in Port Harcourt, working everywhere.
             </p>
           </div>
@@ -126,7 +126,7 @@ export function Hero() {
           <div ref={ctaRef} className="mt-10 flex items-center gap-6">
             <Link
               href="/work"
-              className="inline-flex items-center gap-3 bg-accent text-white font-bold text-xs tracking-[0.15em] uppercase px-8 py-4 hover:bg-accent-dim transition-colors duration-300"
+              className="inline-flex items-center gap-3 bg-terracotta text-cream font-bold text-xs tracking-[0.15em] uppercase px-8 py-4 hover:bg-terracotta-dim transition-colors duration-300"
               data-cursor="EXPLORE"
             >
               View Work
@@ -136,7 +136,7 @@ export function Hero() {
             </Link>
             <Link
               href="/about"
-              className="text-white/50 hover:text-white text-xs tracking-[0.15em] uppercase font-semibold transition-colors duration-300 border-b border-transparent hover:border-white/40 pb-0.5"
+              className="text-espresso/50 hover:text-espresso text-xs tracking-[0.15em] uppercase font-semibold transition-colors duration-300 border-b border-transparent hover:border-taupe/40 pb-0.5"
             >
               About Esther
             </Link>
@@ -147,7 +147,7 @@ export function Hero() {
         <div className="flex justify-center md:justify-end items-center md:items-end h-full pt-10 order-last">
           {/* Offset white frame */}
           <div className="relative">
-            <div className="absolute -top-3 -right-3 w-full h-full border border-white/30 pointer-events-none z-0" />
+            <div className="absolute -top-3 -right-3 w-full h-full border border-taupe/30 pointer-events-none z-0" />
             <div className="relative w-65 sm:w-80 md:w-105 lg:w-130 aspect-3/4 overflow-hidden z-10">
               <Image
                 src="/images/esther-home.jpg"
@@ -157,7 +157,7 @@ export function Hero() {
                 sizes="(max-width: 768px) 320px, 400px"
                 priority
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-espresso/50 to-transparent" />
             </div>
           </div>
         </div>
@@ -165,9 +165,9 @@ export function Hero() {
 
       {/* Scroll indicator */}
       <div ref={scrollRef} className="absolute bottom-10 right-10 hidden md:flex flex-col items-center gap-2 rotate-90 origin-right">
-          <span className="text-white/20 text-[9px] tracking-[0.3em] uppercase">Scroll</span>
-          <div className="w-12 h-px bg-white/20 relative overflow-hidden">
-            <div className="absolute inset-0 bg-accent float-anim" />
+          <span className="text-espresso/20 text-[9px] tracking-[0.3em] uppercase">Scroll</span>
+          <div className="w-12 h-px bg-taupe/30 relative overflow-hidden">
+            <div className="absolute inset-0 bg-terracotta float-anim" />
           </div>
         </div>
     </section>

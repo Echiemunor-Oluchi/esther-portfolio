@@ -41,33 +41,33 @@ export function GrowthMetrics({ metrics, narrative }: GrowthMetricsProps) {
     <div ref={sectionRef} className="py-20 md:py-32">
       {/* Section header */}
       <div className="mb-16">
-        <span className="text-accent text-xs tracking-[0.3em] uppercase font-semibold">The Strategy Behind the Growth</span>
-        <h2 className="font-display text-[12vw] md:text-[7vw] text-white mt-2 leading-none">
+        <span className="text-terracotta text-xs tracking-[0.3em] uppercase font-semibold">The Strategy Behind the Growth</span>
+        <h2 className="font-display text-[12vw] md:text-[7vw] text-espresso mt-2 leading-none">
           GROWTH IN NUMBERS
         </h2>
       </div>
 
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-white/5">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-taupe/15">
         {metrics.map((metric, i) => (
           <div
             key={metric.label}
             ref={(el) => { if (el) cardsRef.current[i] = el }}
-            className="bg-off-black p-8 md:p-10"
+            className="bg-cream p-8 md:p-10"
           >
-            <div className="text-white/30 text-[10px] tracking-[0.2em] uppercase mb-6">{metric.label}</div>
+            <div className="text-espresso/30 text-[10px] tracking-[0.2em] uppercase mb-6">{metric.label}</div>
 
             {/* Before / After */}
             <div className="space-y-4">
               <div>
-                <div className="text-white/20 text-[10px] tracking-[0.15em] uppercase mb-1">Before</div>
-                <div className="font-display text-3xl text-white/30">
+                <div className="text-espresso/20 text-[10px] tracking-[0.15em] uppercase mb-1">Before</div>
+                <div className="font-display text-3xl text-espresso/30">
                   {metric.prefix}{metric.before}{metric.unit}
                 </div>
               </div>
-              <div className="w-full h-px bg-gradient-to-r from-accent/50 to-transparent" />
+              <div className="w-full h-px bg-gradient-to-r from-rose/50 to-transparent" />
               <div>
-                <div className="text-accent text-[10px] tracking-[0.15em] uppercase mb-1">After</div>
-                <div className="font-display text-4xl text-accent">
+                <div className="text-terracotta text-[10px] tracking-[0.15em] uppercase mb-1">After</div>
+                <div className="font-display text-4xl text-terracotta">
                   {metric.prefix}{metric.after}{metric.unit}
                 </div>
               </div>
@@ -79,7 +79,7 @@ export function GrowthMetrics({ metrics, narrative }: GrowthMetricsProps) {
       {/* Narrative */}
       {narrative && (
         <div className="mt-16 max-w-2xl">
-          <p className="text-white/50 text-sm md:text-base leading-relaxed">
+          <p className="text-espresso/50 text-sm md:text-base leading-relaxed">
             {narrative.split('\n')[0]}
           </p>
         </div>

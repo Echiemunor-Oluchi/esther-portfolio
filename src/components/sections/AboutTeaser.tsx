@@ -52,12 +52,12 @@ export function AboutTeaser() {
   }, [])
 
   return (
-    <section ref={sectionRef} className="bg-black py-20 md:py-32 overflow-hidden">
+    <section ref={sectionRef} className="bg-cream py-20 md:py-32 overflow-hidden">
       <div className="max-w-[1400px] mx-auto px-6 md:px-10">
         <div className="grid md:grid-cols-2 gap-12 md:gap-20 items-center">
           {/* Image */}
           <div ref={imageRef} className="relative order-2 md:order-1">
-            <div className="relative aspect-[3/4] overflow-hidden bg-charcoal">
+            <div className="relative aspect-[3/4] overflow-hidden bg-white">
               <Image
                 src="/images/esther-headshot.jpg"
                 alt="Esther Ozurumba, Video Editor & Strategist"
@@ -67,11 +67,11 @@ export function AboutTeaser() {
                 priority
               />
               {/* Blue accent border */}
-              <div className="absolute inset-0 border border-accent/20" />
+              <div className="absolute inset-0 border border-terracotta/20" />
             </div>
             {/* Floating label */}
-            <div className="absolute -bottom-4 -right-4 bg-accent px-4 py-3">
-              <div className="text-white text-[9px] tracking-[0.25em] uppercase font-semibold">Port Harcourt, NG</div>
+            <div className="absolute -bottom-4 -right-4 bg-terracotta px-4 py-3">
+              <div className="text-cream text-[9px] tracking-[0.25em] uppercase font-semibold">Port Harcourt, NG</div>
             </div>
           </div>
 
@@ -82,20 +82,20 @@ export function AboutTeaser() {
             </div>
 
             <div className="reveal-item mt-6 overflow-hidden">
-              <h2 className="font-display text-[12vw] md:text-[6vw] leading-none text-white">
+              <h2 className="font-display text-[12vw] md:text-[6vw] leading-none text-espresso">
                 THE EDITOR
                 <br />
-                <span className="text-white/30">BEHIND THE</span>
+                <span className="text-espresso/30">BEHIND THE</span>
                 <br />
                 CONTENT
               </h2>
             </div>
 
             <div className="reveal-item mt-8 space-y-4">
-              <p className="text-white/60 text-sm leading-relaxed">
-                I am Esther Ozurumba, a video editor and strategist based in Port Harcourt, Nigeria. I specialize in video editing, video strategy for brands, and social media strategy.
+              <p className="text-espresso/60 text-sm leading-relaxed">
+                I am Esther Ozurumba, a video editor and content strategist based in Port Harcourt, Nigeria. I specialize in video editing, video strategy for brands, and content strategy.
               </p>
-              <p className="text-white/60 text-sm leading-relaxed">
+              <p className="text-espresso/60 text-sm leading-relaxed">
                 I help brands and creators turn raw footage into cinematic, scroll stopping content across TikTok and Instagram. I go beyond the edit to think through the strategy behind what gets posted and why.
               </p>
             </div>
@@ -103,7 +103,7 @@ export function AboutTeaser() {
             <div className="reveal-item mt-8">
               <Link
                 href="/about"
-                className="inline-flex items-center gap-3 text-accent text-xs tracking-[0.15em] uppercase font-semibold border-b border-accent pb-0.5 hover:text-white hover:border-white transition-colors duration-300"
+                className="inline-flex items-center gap-3 text-terracotta text-xs tracking-[0.15em] uppercase font-semibold border-b border-terracotta pb-0.5 hover:text-espresso hover:border-taupe transition-colors duration-300"
               >
                 Learn More
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
