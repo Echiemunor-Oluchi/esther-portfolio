@@ -96,7 +96,10 @@ export function Hero() {
 
           {/* Name */}
           <div ref={nameRef} className="overflow-visible">
-            <h1 className="font-display text-[18vw] md:text-[13vw] lg:text-[11vw] leading-[0.88] text-espresso tracking-tight overflow-visible">
+            <h1
+              className="font-display leading-[0.88] text-espresso tracking-tight overflow-visible"
+              style={{ fontSize: 'clamp(2.75rem, 8vw, 6rem)' }}
+            >
               {['ESTHER', 'OZURUMBA'].map((word, i) => (
                 <div key={i} className="overflow-hidden block">
                   <span className="word inline-block">{word}</span>

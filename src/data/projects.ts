@@ -52,7 +52,7 @@ export const projects: Project[] = [
       },
     ],
     tags: ['Video Editing', 'Short Form', 'Brand Content'],
-    coverColor: '#D8A79A',
+    coverColor: '#ffb6c1',
     featured: true,
     hasGrowthSection: true,
     growthMetrics: [
@@ -87,7 +87,7 @@ export const projects: Project[] = [
       },
     ],
     tags: ['Video Editing', 'App Content', 'Short Form'],
-    coverColor: '#6B5B4F',
+    coverColor: '#6b21a8',
     featured: true,
     hasGrowthSection: true,
     growthMetrics: [
@@ -114,7 +114,7 @@ export const projects: Project[] = [
       },
     ],
     tags: ['Video Editing', 'Wellness', 'Short Form'],
-    coverColor: '#9D5C55',
+    coverColor: '#9d174d',
     featured: false,
     hasGrowthSection: true,
     growthMetrics: [
@@ -149,7 +149,7 @@ export const projects: Project[] = [
       },
     ],
     tags: ['Video Editing', 'Content Strategy', 'Instagram Reels', 'Community Building'],
-    coverColor: '#C98A3E',
+    coverColor: '#ea580c',
     featured: true,
     hasGrowthSection: true,
     growthMetrics: [
